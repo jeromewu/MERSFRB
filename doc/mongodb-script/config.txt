@@ -1,0 +1,3 @@
+var config = {_id: 'ad', members:[{_id:0, host:'localhost:27017', priority:1},{_id:1, host:'localhost:27016'}, prioprity:0.5]};
+
+rs.initiate(config);

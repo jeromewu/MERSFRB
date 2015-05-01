@@ -1,0 +1,38 @@
+{
+  "name": "erm-server",
+  "version": "0.0.0",
+  "private": true,
+  "main": "public/js/app.js",
+  "scripts":{
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "http":"*",
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "method-override": "*",
+    "mongoose": "*",
+    "express-restify-mongoose": "*",
+    "deasync": "*",
+    "jade": "*",
+    "flux": "*",
+    "react": "*",
+    "underscore": "*",
+    "node-rest-client": "*",
+    "browserify": "*",
+    "envify": "*",
+    "reactify": "*",
+    "watchify": "*",
+    "react-bootstrap":"*",
+    "mongo-oplog":"*",
+    "socket.io":"*",
+    "socket.io-client":"*"
+  },
+  "browserify": {
+    "transform":[
+      "reactify",
+      "envify"
+    ]
+  }
+}
