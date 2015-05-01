@@ -6,6 +6,9 @@ MERSFRB = Mongoose+Express+Restify+Socket.io+Flux+React+Bootstrap
 
 A package that combines 7 nodejs packages aims to achieve agile web application development
 
+Architecture
+![architecture](https://raw.githubusercontent.com/jeromewu/MERSFRB/master/doc/architecture.png)
+
 ## Build
 
 Use browserify to create bundle.js
