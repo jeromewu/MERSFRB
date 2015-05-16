@@ -41851,7 +41851,7 @@ socket.on('connect', function(){
   RestClient.getMessages();
 })
 
-socket.on('update message',function(){
+socket.on('chatapp.messages',function(){
   RestClient.getMessages();
 })
 

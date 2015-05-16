@@ -1,5 +1,5 @@
 {
-  "name": "erm-server",
+  "name": "MERSFRB",
   "version": "0.0.0",
   "private": true,
   "main": "public/js/app.js",
@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "express": "*",
+    "morgan":"*",
     "http":"*",
+    "debug":"*",
     "body-parser": "*",
     "cookie-parser": "*",
     "method-override": "*",

@@ -5,5 +5,5 @@ module.exports = {
   mongodb_uri: base_url+"chatapp",
   mongodb_local_uri: base_url+"local",
   mongoose_models_dir: "./mongoose-models",
-  db_watch: "chatapp.messages"
+  collection_watch_list: ["chatapp.messages"]
 }

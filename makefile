@@ -1,7 +1,7 @@
 all: compile
 
 run:
-	node app.js
+	DEBUG=server:* node app.js
 
 compile:
 	browserify . > public/js/bundle.js

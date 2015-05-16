@@ -1,3 +1,4 @@
+var debug=require('debug')('server:mongoose-instantiator');
 var fs=require('fs');
 
 function read_mongoose_models(mongoose_models_dir){
@@ -9,7 +10,7 @@ function read_mongoose_models(mongoose_models_dir){
     files.forEach(function(file){
       fs.readFile(mongoose_models_dir+'/'+file, 'utf-8', function(err, json_text){
         if(err) throw err;
-        console.log('read file: '+file);
+        debug('Read model file: '+file);
         var model_name = file.slice(0, -5);
         var model_schema = JSON.parse(json_text);
         models.push({name: model_name, schema: model_schema});
