@@ -12,7 +12,7 @@ Architecture
 
 ## Build
 
-* To define your mongoose schema, put .json file in **./mongoose-models**, the name of the .json will be the name of the collection, and the content will be the schema, for the details of the rest api, please see [express-restify-mongoose](https://github.com/florianholzapfel/express-restify-mongoose)
+* To define your mongoose schema, put .json file in **./mongoose-models/custom/**, the name of the .json will be the name of the collection, and the content will be the schema, for the details of the rest api, please see [express-restify-mongoose](https://github.com/florianholzapfel/express-restify-mongoose)
 
 * Install all modules by
 

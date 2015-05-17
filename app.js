@@ -10,6 +10,7 @@ var MongoOplog = require('mongo-oplog');
 var io = require('socket.io');
 var debug = require('debug')('server:http');
 var http = require('http');
+var cors = require('cors');
 
 var config = require('./config');
 var mongooseInstantiator = require('./mongoose-instantiator');
@@ -39,6 +40,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 app.use(router);
 app.use('/chatapp',app_route);

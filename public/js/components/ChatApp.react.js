@@ -7,7 +7,7 @@ var Grid = ReactBootstrap.Grid;
 var Row = ReactBootstrap.Row;
 var Col = ReactBootstrap.Col;
 
-var ChatApp = React.createClass({
+module.exports = React.createClass({
   getInitialState: function(){
     return {
       messages: MessageStore.getMessages(),
@@ -24,8 +24,9 @@ var ChatApp = React.createClass({
   },
 
   setUserName: function(name){
-    this.state.userName = name;
-    this.forceUpdate();
+    this.setState({
+      userName: name
+    })
   },
 
   render: function(){
@@ -40,9 +41,6 @@ var ChatApp = React.createClass({
   _onChange: function(){
     this.setState({
       messages: MessageStore.getMessages(),
-      userName: this.state.userName
     });
   }
 });
-
-module.exports = ChatApp;

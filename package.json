@@ -1,6 +1,6 @@
 {
   "name": "MERSFRB",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "main": "public/js/app.js",
   "scripts":{
@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "*",
     "morgan":"*",
+    "crypto":"*",
     "http":"*",
     "debug":"*",
     "body-parser": "*",
@@ -27,9 +28,14 @@
     "reactify": "*",
     "watchify": "*",
     "react-bootstrap":"*",
+    "react-mixin":"*",
     "mongo-oplog":"*",
     "socket.io":"*",
-    "socket.io-client":"*"
+    "socket.io-client":"*",
+    "request":"*",
+    "cors":"*",
+    "oauth2orize":"*",
+    "passport":"*"
   },
   "browserify": {
     "transform":[
