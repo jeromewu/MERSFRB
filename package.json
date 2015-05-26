@@ -19,7 +19,7 @@
     "express-restify-mongoose": "*",
     "deasync": "*",
     "jade": "*",
-    "flux": "*",
+    "reflux": "*",
     "react": "*",
     "underscore": "*",
     "node-rest-client": "*",

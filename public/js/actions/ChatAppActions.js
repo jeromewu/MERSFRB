@@ -1,13 +1,5 @@
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var ChatAppConstants = require('../constants/ChatAppConstants');
+var Reflux = require('reflux');
 
-var ChatAppActions = {
-  receiveMessages: function(data){
-    AppDispatcher.handleAction({
-      actionType: ChatAppConstants.RECEIVE_MESSAGE,
-      data: data
-    });
-  }
-}
-
-module.exports = ChatAppActions;
+module.exports = Reflux.createActions([
+    'receiveMessages'
+]);
